@@ -15,4 +15,12 @@ export class TaskService {
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.apiUrl);
   }
+
+  deleteTask(task:Task): Observable<Task> {
+    // private url = this.apiUrl + task.id;
+    // backtick + literal template
+    // private url = $(this.apiUrl + this.task.id);
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.delete<Task>(url);
+  }
 }
