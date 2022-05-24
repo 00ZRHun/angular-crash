@@ -23,4 +23,11 @@ export class TasksComponent implements OnInit {
                                                                                   // filter to get rid of deleted item // ***
   }
 
+  toggleReminder(task: Task) {
+    task.reminder = !task.reminder;
+    this.taskService
+      .toggleTaskReminder(task)
+      .subscribe();
+  }
+
 }
