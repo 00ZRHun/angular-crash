@@ -1,5 +1,8 @@
 # AngularCrash
 
+Tutorial: youtube.com/watch?v=3dHNOWTI7H8&t=1081s
+Github: https://github.com/bradtraversy/angular-crash-2021
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
 ## Development server
